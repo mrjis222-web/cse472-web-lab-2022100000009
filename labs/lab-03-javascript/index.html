@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Student Workshop Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Student Workshop Registration System</h1>
+
+    <p>Welcome to our student workshop registration page.</p>
+
+
+    <h2>Workshop Information</h2>
+
+    <p><strong>Workshop:</strong> Web and Internet Programming</p>
+
+    <p><strong>Date:</strong> 15 September 2026</p>
+
+    <p><strong>Time:</strong> 10:00 AM</p>
+
+    <p><strong>Venue:</strong> Computer Lab</p>
+
+
+    <h2>Registration Status</h2>
+
+    <button type="button" onclick="checkRegistration()">
+        Check Registration Status
+    </button>
+
+    <p id="registrationStatus">
+        Click the button to check the status.
+    </p>
+
+
+    <h2>Seat Availability</h2>
+
+    <button type="button" onclick="checkSeats()">
+        Check Seat Availability
+    </button>
+
+    <p id="seatMessage">
+        Seat information will appear here.
+    </p>
+
+
+    <h2>Student Information</h2>
+
+    <label for="studentName">Full Name:</label>
+
+    <input type="text" id="studentName">
+
+    <button type="button" onclick="showGreeting()">
+        Show Greeting
+    </button>
+
+    <p id="greetingMessage"></p>
+
+
+    <h2>Workshop Reminder</h2>
+
+    <button type="button" onclick="showReminder()">
+        Show Workshop Reminder
+    </button>
+
+    <p id="reminderMessage">
+        Workshop reminder will appear here.
+    </p>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
