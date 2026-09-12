@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Workshop Registration System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Workshop Registration System</h1>
+        <p>CSE472 Web and Internet Programming Lab</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Workshop Details</h2>
+
+            <p>
+                <strong>Title:</strong>
+                <span id="workshopTitle">Not loaded</span>
+            </p>
+
+            <p>
+                <strong>Date:</strong>
+                <span id="workshopDate">Not loaded</span>
+            </p>
+
+            <p>
+                <strong>Venue:</strong>
+                <span id="workshopVenue">Not loaded</span>
+            </p>
+
+            <p>
+                <strong>Seats:</strong>
+                <span id="workshopSeats">Not loaded</span>
+            </p>
+            <p>
+    <strong>Instructor:</strong>
+    <span id="workshopInstructor">Not loaded</span>
+</p>
+
+            <button onclick="loadWorkshop()">
+                Load Workshop Details
+            </button>
+
+            <p id="loadMessage">
+                Click the button to load workshop data.
+            </p>
+        </section>
+
+
+        <section class="card">
+            <h2>Public API Practice</h2>
+
+            <button onclick="loadSampleUser()">
+                Load Sample User
+            </button>
+
+            <p id="apiUser">
+                API data will appear here.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>CSE472 Web and Internet Programming</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
