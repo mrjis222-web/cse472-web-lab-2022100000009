@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEU Tech Event Information and Registration Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SEU Tech Event</h1>
+        <p>Technology, Learning and Innovation</p>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#registration">Registration</a>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2>About the Event</h2>
+
+            <p>
+                SEU Tech Event is a technology-focused event for students.
+                The event provides an opportunity to learn about web development,
+                programming and modern technology.
+            </p>
+
+            <div>
+                <p>
+                    <span>Event Goal:</span>
+                    To encourage students to learn, practice and share
+                    their technical knowledge.
+                </p>
+            </div>
+
+            <img src="images/campus.jpg" alt="SEU campus" width="500">
+
+        </section>
+
+
+        <!-- Activities Section -->
+        <section id="activities">
+
+            <h2>Event Activities</h2>
+
+            <h3>Topics</h3>
+
+            <ul>
+                <li>Web Development</li>
+                <li>Programming</li>
+                <li>Artificial Intelligence</li>
+                <li>Cyber Security</li>
+            </ul>
+
+
+            <h3>How to Participate</h3>
+
+            <ol>
+                <li>Read the event information</li>
+                <li>Choose your preferred date</li>
+                <li>Complete the registration form</li>
+            </ol>
+
+
+            <h3>Learning Areas</h3>
+
+            <ul>
+                <li>
+                    Web Development
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+
+                <li>Programming</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+
+            <h2>Event Schedule</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Session</th>
+                </tr>
+
+                <tr>
+                    <td>10 October 2026</td>
+                    <td>10:00 AM</td>
+                    <td>Opening Session</td>
+                </tr>
+
+                <tr>
+                    <td>10 October 2026</td>
+                    <td>11:00 AM</td>
+                    <td>Web Development</td>
+                </tr>
+
+                <tr>
+                    <td>10 October 2026</td>
+                    <td>1:00 PM</td>
+                    <td>Programming Workshop</td>
+                </tr>
+
+                <tr>
+                    <td>10 October 2026</td>
+                    <td>3:00 PM</td>
+                    <td>Closing Session</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- Registration Section -->
+        <section id="registration">
+
+            <h2>Event Registration</h2>
+
+            <form>
+
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="studentid">Student ID:</label>
+                <input
+                    type="text"
+                    id="studentid"
+                    name="studentid"
+                    placeholder="Enter your student ID"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="date">Preferred Date:</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+
+                <br><br>
+
+
+                <p>Preferred Participation Type:</p>
+
+                <input
+                    type="radio"
+                    id="online"
+                    name="participation"
+                    value="online"
+                >
+                <label for="online">Online</label>
+
+
+                <input
+                    type="radio"
+                    id="onsite"
+                    name="participation"
+                    value="onsite"
+                >
+                <label for="onsite">On-site</label>
+
+
+                <p>Interests:</p>
+
+                <input
+                    type="checkbox"
+                    id="web"
+                    name="interest"
+                    value="web"
+                >
+                <label for="web">Web Development</label>
+
+
+                <input
+                    type="checkbox"
+                    id="programming"
+                    name="interest"
+                    value="programming"
+                >
+                <label for="programming">Programming</label>
+
+                <br><br>
+
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 SEU Tech Event. All rights reserved.
+        </p>
+
+        <p>
+            Visit
+            <a href="https://seu.edu.bd/" target="_blank">
+                Southeast University
+            </a>
+            for more information.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
