@@ -1,0 +1,112 @@
+CSE472: Web and Internet Programming Lab
+
+LAB REPORT 01
+
+Topic: Internet Fundamentals, DNS, URL Architecture, HTTP, HTTPS and Network Analysis
+
+Student Name: Md. Jawat Alom
+Student ID: 2022100000009
+Course: CSE472
+Department: Computer Science and Engineering
+University: Southeast University
+
+Submitted To:
+Course Instructor
+CSE472: Web and Internet Programming Lab
+
+Date: September 2026
+
+
+| Domain                                  | TLD | Second-Level Domain | Subdomain(s) | FQDN                                    |
+| --------------------------------------- | --- | ------------------- | ------------ | --------------------------------------- |
+| [www.google.com](http://www.google.com) | com | google              | www          | [www.google.com](http://www.google.com) |
+| mail.yahoo.co.uk                        | uk  | co                  | mail.yahoo   | mail.yahoo.co.uk                        |
+| portal.university.edu                   | edu | university          | portal       | portal.university.edu                   |
+| api.github.com                          | com | github              | api          | api.github.com                          |
+
+I opened the Network panel in Chrome Developer Tools and reloaded example.com. I selected the example.com request and checked the Headers section. The request returned a status code of 200 OK, which shows that the HTTP request was successfully processed by the server.
+
+I inspected the HTTP request and response headers using the browser’s Network panel. The request headers contained information such as the Host, User-Agent, and Accept fields. The response headers included information such as Content-Type, Server, and Date. This helped me understand that HTTP headers carry additional information between the client and server. HTTP communication is stateless because each request is handled independently.
+
+I opened the Application panel in Chrome Developer Tools and checked the Cookies section under Storage. This helped me understand where browser cookies are stored and how cookies can be used to maintain information between HTTP requests. Cookies provide a way to manage state even though HTTP itself is stateless.
+
+I accessed https://example.com and inspected the request in the browser’s Network panel. The Request URL showed that HTTPS was being used. HTTPS provides secure communication by using TLS, which helps protect data exchanged between the client and server. This exercise helped me understand the difference between normal HTTP and secure HTTPS communication.
+
+2. Objectives
+
+The objectives of this laboratory were:
+
+• To understand the basic concepts of the Internet and World Wide Web.
+• To understand domain names, DNS, and DNS record types.
+• To analyze the structure of URLs and understand different URL components.
+• To understand ports, TCP connections, and basic network communication.
+• To observe HTTP requests and responses using cURL and browser Developer Tools.
+• To understand HTTP status codes, headers, cookies, HTTPS, and TLS.
+• To observe network packets using Wireshark.
+
+3. Tools and Environment
+
+The following tools were used to complete this laboratory:
+
+• Windows Command Prompt (CMD)
+• Google Chrome
+• Chrome Developer Tools
+• cURL
+• Wireshark
+• Visual Studio Code
+• Live Server extension
+
+These tools were used for DNS lookup, URL analysis, HTTP request and response testing, network connection observation, browser Network and Application panel inspection, and packet analysis.
+
+
+4. Request–Response Understanding
+
+The Internet uses a request-response model for communication between a client and a server. A client sends a request to a server, and the server processes the request and sends back a response. During this laboratory, I observed this process using cURL and the browser Network panel. For example, a GET request was sent to example.com, and the server returned an HTTP 200 OK response. I also tested a non-existing resource and observed a 404 Not Found response. These activities helped me understand how clients and servers communicate using HTTP.
+
+
+5. Implementation Evidence
+
+During the laboratory, several practical tasks were completed to understand Internet and network concepts. I analyzed domain names and identified their different components such as TLD, second-level domain, subdomain, and FQDN. I used nslookup to perform DNS lookups and examined A, MX, and TXT records. I also decomposed a URL into its scheme, host, port, path, query string, and fragment. In addition, I created a simple webpage to test a relative URL.
+
+I used netstat to observe active TCP connections and used cURL to send an HTTP GET request to example.com. I inspected HTTP requests and responses using Chrome Developer Tools, tested HTTP 200 and 404 status codes, examined HTTP headers and cookies, and verified an HTTPS request. Finally, I used Wireshark to capture and inspect TCP packets.
+
+
+6. Network Evidence
+
+The network activities were verified using Command Prompt, Chrome Developer Tools, and Wireshark. The nslookup command successfully resolved domain names and returned DNS information. The netstat command showed active TCP connections, including an ESTABLISHED connection using remote port 443. Using cURL, I observed an HTTP GET request to example.com and received a 200 OK response. In Chrome Developer Tools, the Network panel was used to inspect the request URL, status code, and HTTP headers. I also tested a non-existing resource and observed a 404 Not Found response. Finally, Wireshark was used to capture TCP packets and inspect their source and destination ports.
+
+Screenshots of these practical activities are included as evidence in the report.
+
+
+7. Key Concepts and Code Explanation
+
+The nslookup command was used to find DNS information for domain names. It helped identify IP addresses and different DNS records such as A, MX, and TXT records. The netstat command was used to observe active network connections and their TCP ports.
+
+The curl command was used to send an HTTP GET request and display the request and response details. The response showed a 200 OK status code and a Content-Type of text/html. Chrome Developer Tools was used to inspect HTTP requests, response headers, status codes, and cookies.
+
+Wireshark was used to capture network packets and inspect TCP communication. The Transmission Control Protocol section showed information such as source and destination ports. These tools helped me understand how DNS, TCP, HTTP, HTTPS, and network communication work together.
+
+
+8. Testing and Debugging
+
+I tested the practical activities several times to make sure the results were correct. The DNS commands successfully returned the expected domain information and DNS records. The netstat command displayed active TCP connections. The cURL request returned a 200 OK response, confirming successful HTTP communication. I also tested an invalid resource and observed a 404 Not Found response. The browser Network panel was used to verify request status and headers, while Wireshark was used to inspect TCP packets. These tests helped me identify and understand different types of network responses and communication details.
+
+
+9. GitHub Link
+
+The complete laboratory work was organized in the Lab 01 folder of my CSE472 Web and Internet Programming Lab GitHub repository.
+
+GitHub Link:
+https://github.com/mrjis222-web/cse472-web-lab-2022100000009/tree/main/labs/lab-01-http-network
+
+
+10. Learning Reflection
+
+Through this laboratory, I learned the basic concepts of Internet communication, DNS, URLs, HTTP, HTTPS, TCP, and network packets. I learned how to use nslookup to check DNS information, netstat to observe active connections, and cURL to inspect HTTP requests and responses. I also learned how to use Chrome Developer Tools to check network requests, status codes, headers, and cookies. Using Wireshark helped me understand how TCP packets can be captured and inspected. Overall, this laboratory improved my understanding of how different Internet and network technologies work together.
+
+
+11. AI Declaration
+
+AI tools were used as a learning and assistance resource during this laboratory. They helped me understand the laboratory instructions, organize the report, and clarify technical concepts and troubleshooting steps. I personally performed the practical activities, observed the results, captured the required screenshots, and verified the work before including it in the report.
+
+
