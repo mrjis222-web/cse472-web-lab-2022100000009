@@ -4,18 +4,6 @@ LAB REPORT 01
 
 Topic: Internet Fundamentals, DNS, URL Architecture, HTTP, HTTPS and Network Analysis
 
-Student Name: Md. Jawat Alom
-Student ID: 2022100000009
-Course: CSE472
-Department: Computer Science and Engineering
-University: Southeast University
-
-Submitted To:
-Course Instructor
-CSE472: Web and Internet Programming Lab
-
-Date: September 2026
-
 
 | Domain                                  | TLD | Second-Level Domain | Subdomain(s) | FQDN                                    |
 | --------------------------------------- | --- | ------------------- | ------------ | --------------------------------------- |
@@ -57,7 +45,6 @@ The following tools were used to complete this laboratory:
 • Live Server extension
 
 These tools were used for DNS lookup, URL analysis, HTTP request and response testing, network connection observation, browser Network and Application panel inspection, and packet analysis.
-
 
 4. Request–Response Understanding
 
